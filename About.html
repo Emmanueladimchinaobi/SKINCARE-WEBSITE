@@ -9,27 +9,19 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- navbar -->
+   <!-- navbar -->
    
- <nav  class="shadow-xl fixed z-50 top-0 left-0 w-full">
-    <div class="flex justify-center item-center max-w-7xl mx-auto px-6 hover:text-2xl ">
-        <h1 class="text-black font-extrabold" >Benilux Skin and Scents</h1>
-    </div>
+ <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="flex items-center justify-between p-4">
+       <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden text-3xl">
+      ☰
+    </button>
+    
 
-    <div class="max-w-7xl mx-auto px-6 border-t ">
-
-      <div class="flex justify-between items-center h-16">
-        <!-- Hamburger Button -->
-        <div class=" lg:hidden flex gap-2 items-center ">
-          <button id="menu-btn" class="flex flex-col space-y-1 ">
-            <span class="w-6 h-0.5 bg-black"></span>
-            <span class="w-6 h-0.5 bg-black"></span>
-            <span class="w-6 h-0.5 bg-black"></span>
-          </button>
-
-        </div>
-        
-        <!-- Desktop Menu -->
+    <!-- Desktop Menu -->
         <div class="hidden  lg:flex  space-x-8 items-center">
           <div class="relative group ">
 <button id="services-btn2">Services</button>
@@ -54,32 +46,36 @@
             </a>
 
         </div>
+        <h1 class=" font-extrabold">Benilux Skin and Scents</h1>
+  </div>
+
+  </div>
+
+  <!-- Full Screen Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="fixed inset-0 bg-white z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+  >
+    <!-- Close Button -->
+    <button id="closeBtn" class="absolute top-6 left-6 text-4xl">
+      ✕
+    </button>
 
 
-        <div class="text-xl font-bold text-black">
-          Benilux Skin and Scents
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="menu" class=" lg:hidden  px-6 pb-4 absolute top-full left-0 h-75 bg-white w-full  shadow-lg opacity-0  -translate-x-full 
-transition-all duration-300 ease-in-out">
-
-      <ul class="flex flex-col ">
-                   <!-- Main Menu -->
-<div id="main-menu"
+        <li>
+          <a href="./index.html" class="block px-6 py-4 mt-20 border-b  border-t">
+            Home
+          </a>
+          <div id="main-menu"
      class="absolute   transition-transform duration-300 translate-x-0">
 
-  <button id="services-btn" class="block px-6 py-4 ">  Services 
-  
-  </button>
+  <div class="block px-6 py-4  mt-2  " ><button id="services-btn" >Services  
+  </button></div>
 </div>
 
 <!-- Submenu -->
 <div id="submenu"
-     class="absolute w-full  left-0 h-75 z-50 bg-white shadow-lg transition-transform duration-300 translate-x-full">
+     class="fixed inset-0  z-50  bg-white shadow-xl transition-transform duration-300 translate-x-full">
 
   <button id="back-btn" class="p-4">
     ← Back
@@ -95,34 +91,24 @@ transition-all duration-300 ease-in-out">
    
   </ul>
 </div>
-
-        <li>
-          <a href="./index.html" class="block px-6 py-4 pt-20 border-b border-zinc-700 ">
-            Home
-          </a>
-          <a href="./About.html" class="block px-6 py-4 border-b border-zinc-700 ">
+          <a href="./About.html" class="block px-6 py-4 mt-20  border-t border-b ">
             About
           </a>
-          <a href="https://wa.me/2347049540146?text=Hello,Benilux Skin and Scents I'm interested in your products." class="block px-6 py-4 border-b border-zinc-700 ">
+          <a href="https://wa.me/2347049540146?text=Hello,Benilux Skin and Scents I'm interested in your products."
+           class="block px-6 py-4 border-b
+           ">
             Contact
           </a>
-          <li class="block px-6 space-x-2"><a href="https://www.tiktok.com/@beniluxskinandscents"><i class="fa-brands fa-tiktok"></i></a> 
+          <li class="block px-6 space-x-2 border-b "><a href="https://www.tiktok.com/@beniluxskinandscents"><i class="fa-brands fa-tiktok"></i></a> 
      
    <a href="https://www.facebook.com/share/18zhkPdQz7/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a> 
  <a href="https://wa.me/2347049540146?text=Hello,Benilux Skin and Scents I'm interested in your products.">
   <i class="fa-brands fa-whatsapp"></i></a> 
 <a href="tel:+2347049540146"><i class="fa-solid fa-phone"></i></a> </li>
         </li>
-
-      </ul>
-
-    </div>
-
-
-
-
-
-  </nav>
+    
+  </div>
+</nav>
   <div class="max-w-7xl mx-auto px-6 pt-24 ">
    
     
@@ -158,7 +144,7 @@ Shop with us today and take the first step toward glowing, beautiful skin.
   </div>
   
   <!------footer-->
-  <footer class="bg-pink-400 h-auto pb-20 ">
+  <footer class="bg-black text-white h-auto pb-20 ">
 <div class="max-w-7xl mx-auto px-6">
   <div class="flex flex-wrap  space-x-2">
     <div class="flex-1  p-5">
@@ -182,9 +168,9 @@ Shop with us today and take the first step toward glowing, beautiful skin.
 
 </div>
   </footer>
-  <footer class=" fixed bottom-0 left-0 w-full bg-pink-400 shadow-lg">
+  <footer class=" fixed bottom-0 left-0 w-full bg-black text-white shadow-lg ">
     <div class="border-t max-w-7xl mx-auto px-6">
-  <ul class="flex justify-center items-center space-x-6">
+  <ul class="flex justify-center items-center space-x-6 p-2">
   <li class="relative z-50"><a href="https://www.tiktok.com/@beniluxskinandscents"><i class="fa-brands fa-tiktok"></i></a>  </li>
      
    <li class="relative z-50"><a href="https://www.facebook.com/share/18zhkPdQz7/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a> </li>

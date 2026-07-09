@@ -1,10 +1,16 @@
-const menubtn = document.getElementById ("menu-btn");
-const menu = document.getElementById ("menu");
-menubtn.addEventListener("click", () => {
-    menu.classList.toggle("-translate-x-0");
-     menu.classList.toggle("-translate-x-full");
-      menu.classList.toggle("opacity-0");
-})
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+  mobileMenu.classList.add("flex");
+});
+
+closeBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("flex");
+  mobileMenu.classList.add("hidden");
+});
 
 const servicesBtn = document.getElementById("services-btn");
 const backBtn = document.getElementById("back-btn");
