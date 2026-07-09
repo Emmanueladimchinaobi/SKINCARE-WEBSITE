@@ -252,6 +252,9 @@
   .h-auto {
     height: auto;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
