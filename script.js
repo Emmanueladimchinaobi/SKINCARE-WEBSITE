@@ -4,17 +4,12 @@ const mobileMenu = document.getElementById("mobileMenu");
 
 menuBtn.addEventListener("click", () => {
  mobileMenu.classList.remove("hidden");
- mobileMenu.classList.add("flex");
- 
- 
+ mobileMenu.classList.add("flex"); 
 });
 
 closeBtn.addEventListener("click", () => {
   mobileMenu.classList.add("hidden");
-  mobileMenu.classList.remove("remove");
-  
-  
-  
+  mobileMenu.classList.remove("flex"); 
 });
 
 const servicesBtn = document.getElementById("services-btn");
@@ -114,3 +109,5 @@ function createPagination() {
 
 
 showProducts(1);
+
+
