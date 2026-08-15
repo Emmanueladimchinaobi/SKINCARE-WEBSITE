@@ -57,7 +57,7 @@ const totalPages = Math.ceil(products.length / productsPerPage);
 
 
 function showProducts(page) {
-
+ 
     currentPage = page;
 
     const start = (page - 1) * productsPerPage;
@@ -78,6 +78,7 @@ function showProducts(page) {
     });
 
     createPagination();
+     
 
 }
 
