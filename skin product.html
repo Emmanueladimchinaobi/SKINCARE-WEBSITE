@@ -11,12 +11,12 @@
 <body>
     <!-- navbar -->
    
- <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto">
+ <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto pt-4 pb-4">
   <div class="max-w-7xl mx-auto px-6">
     
-    <div class="flex items-center justify-between p-4">
+    <div class="flex items-center justify-between space-x-2">
        <!-- Hamburger -->
-    <button id="menuBtn" class="lg:hidden text-3xl">
+    <button id="menuBtn" class="lg:hidden text-3xl z-100  transition-transform duration-300">
       ☰
     </button>
     
@@ -48,7 +48,21 @@
             </a>
 
         </div>
-        <h1 class=" font-extrabold">Benilux Skin and Scents</h1>
+        <div class="flex ">
+<div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Benilux</span>
+</div>
+<div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">skin</span>
+</div>
+<div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">and</span>
+</div>
+<div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents</span>
+</div>
+
+                   </div>
   </div>
 
   </div>
@@ -56,13 +70,10 @@
   <!-- Full Screen Mobile Menu -->
   <div
     id="mobileMenu"
-    class="fixed inset-0 bg-white z-50 hidden  px-4 py-4 flex-col space-y-8 text-xl lg:hidden 
+    class="fixed inset-0 w-1/2 bg-white z-50 hidden  px-4 py-4 flex-col  space-y-8 text-xl lg:hidden 
     "
   >
-    <!-- Close Button -->
-    <button id="closeBtn" class="absolute top-6 left-6 text-4xl">
-      ✕
-    </button>
+   
 
 <ul class="list-none"><li class="list-none">
           <a href="./skin product.html" class="block px-6 py-4 mt-20 border-b  border-t list-none">
@@ -101,12 +112,13 @@
            ">
             our brand
           </a>
-          <li class="block px-6 py-4 space-x-2 border-b "><a href="https://www.tiktok.com/@beniluxskinandscents"><i class="fa-brands fa-tiktok"></i></a> 
+          <li class="block px-6 py-4 space-x-2 border-b "><a href="https://www.tiktok.com/@beniluxskinandscents">
+            <i class="fa-brands fa-tiktok text-black"></i></a> 
      
-   <a href="https://www.facebook.com/share/18zhkPdQz7/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a> 
+   <a href="https://www.facebook.com/share/18zhkPdQz7/?mibextid=wwXIfr"><i class="fa-brands fa-facebook text-blue-600"></i></a> 
  <a href="https://wa.me/2347049540146?text=Hello,Benilux Skin and Scents I'm interested in your products.">
-  <i class="fa-brands fa-whatsapp"></i></a> 
-<a href="tel:+2347049540146"><i class="fa-solid fa-phone"></i></a> </li>
+  <i class="fa-brands fa-whatsapp text-green-400"></i></a> 
+<a href="tel:+2347049540146"><i class="fa-solid fa-phone text-green-600"></i></a> </li>
         </li></ul>
         
     
@@ -115,9 +127,22 @@
   <div class="h-150 bg-cover  max-w-7xl mx-auto px-6   bg-center bg-no-repeat animate-gentle flex justify-center items-center "
 
 style="background-image: url('./img/Trending\ Beauty\ Hacks\ Every\ Girl\ Should\ Know\ 2026.jfif');">
-<h1 class="bg-white">welcome to Benilux Skin and Scents</h1>
+<div class="flex ">
+<div class="relative bg-gray-50 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Benilux</span>
+</div>
+<div class="relative bg-gray-50 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">skin</span>
+</div>
+<div class="relative bg-gray-50 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">and</span>
+</div>
+<div class="relative bg-gray-50 h-15 w-15 rounded-full text-black">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents</span>
+</div>
+                   </div>
   </div>
-  <div class="w-full bg-white h-auto shadow-xl mb-6">
+  <div class="w-full bg-white h-auto shadow-xl ">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex justify-between items-center overflow-hidden space-x-8 p-5 ">
 <h1 style="font-family: 'Times New Roman', Times, serif;"> GLOSS</h1>
@@ -128,94 +153,266 @@ style="background-image: url('./img/Trending\ Beauty\ Hacks\ Every\ Girl\ Should
     </div>
 
   </div>
+
+<!-- PRODUCT SLIDER -->
+<section class="w-full  text-black  pt-4 pb-6">
+
+    <div class="relative max-w-7xl mx-auto px-6  ">
+
+        <!-- LEFT ARROW -->
+        <button
+            id="prevBtn"
+            type="button"
+            class="absolute left-0 top-1/2 -translate-y-1/2
+                   text-5xl 
+                   ">
+            ‹
+        </button>
+
+
+        <!-- PRODUCT VIEWPORT -->
+        <div class="overflow-hidden   ">
+
+            <!-- SLIDER -->
+            <div
+                id="productSlider"
+                class="flex"
+            >
+
+
+                <!-- PRODUCT 1 -->
+                <div
+                    class=" product-card slider-product 
+                           px-2 text-center  min-w-[100%]  "
+                >
+
+                    <img
+      src="./img/download (17).jpeg"
+                        class="w-full rounded-2xl h-150 object-cover  mx-auto "
+                    >
+
+</div>
+
+
+                <!-- PRODUCT 2 -->
+                <div
+                    class="product-card slider-product 
+                           px-2 text-center   min-w-[100%]  "
+                >
+
+                    <img
+                        src="./img/Face Wash 🤍✨.jpeg"
+                        class="w-full  h-150 object-cover rounded-2xl mx-auto overflow-hidden"
+                    >
+
+                </div>
+
+
+
+                
+
+
+                <!-- PRODUCT 3 -->
+                <div
+                    class="product-card slider-product 
+                           px-2 text-center min-w-[100%]  "
+                >
+
+                    <img
+                        src="./img/Natural Glowing Skin on Melanin-Rich Complexions _ Skincare Results & Healthy Skin Tips (1).jpeg"
+                        class="w-full  h-150 object-cover rounded-2xl mx-auto "
+                    >
+                  
+
+                   
+
+                </div>
+
+ <!-- PRODUCT 4 -->
+                <div
+                    class="product-card slider-product 
+                           px-2 text-center min-w-[100%]  "
+                >
+
+                    <img
+                        src="./img/skpncare.jpeg"
+                        class="w-full  h-150 object-cover rounded-2xl mx-auto "
+                    >
+                  
+
+                   
+
+                </div>
+     
+                <!-----product 5-->
+    <div
+                    class="product-card slider-product 
+                           px-2 text-center min-w-[100%]  "
+                >
+
+                    <img
+                        src="./img/Trending Beauty Hacks Every Girl Should Know 2026.jfif"
+                        class="w-full  h-150 object-cover rounded-2xl mx-auto"
+                    >
+                  
+
+                   
+
+                </div>
+<!---product 6-->
+                <div
+                    class="product-card slider-product 
+                           px-2 text-center min-w-[100%]  "
+                >
+
+                   <div class="flex h-150 w-full justify-center items-center bg-gray-100 shadow-md">
+<div class="relative bg-black h-15 w-15 rounded-full text-white">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Benilux</span>
+</div>
+<div class="relative bg-black h-15 w-15 rounded-full text-white">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">skin</span>
+</div>
+<div class="relative bg-black h-15 w-15 rounded-full text-white">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">and</span>
+</div>
+<div class="relative bg-black h-15 w-15 rounded-full text-white">
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents</span>
+</div>
+                   </div>
+                  
+
+                   
+
+                </div>
+
+                >
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT ARROW -->
+        <button
+            id="nextBtn"
+            type="button"
+            class="absolute right-0 top-1/2 -translate-y-1/2
+                   text-5xl 
+                   ">
+            ›
+        </button>
+
+
+        <!-- PAGINATION HANDLES -->
+        <div
+            id="sliderIndicators"
+            class="flex justify-center items-center gap-7 mt-6 "
+        >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
   <!----New cards-->
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex-col justify-between items-center">
 <h1 class="text-3xl"> NEW IN</h1>
-<p class="mb-6">Dermatologist tested formulas</p>
+<p class="mb-6" style="font-family: 'Times New Roman', Times, serif;">Dermatologist tested formulas</p>
 
     </div>
 
   </div>
 <div class="max-w-7xl mx-auto px-6 mb-6 h-auto">
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-  <div class="product "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08 (2).jpeg" alt="" class="   object-contain animate-gentle">
+  <div class="product2 "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08 (2).jpeg" alt="" 
+    class="   object-contain ">
   <h1 class="text-center">milky white toner</h1></div>
-  <div class="product  "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt="" class=" animate-gentle  object-contain">
+  <div class="product2  "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt=""
+     class="   object-contain">
   <p class="text-center">Duches glow</p></div>
-  <div class="product " ><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08.jpeg" alt="" class="animate-gentle  object-contain">
+  <div class="product2 " ><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08.jpeg" alt="" class=" object-contain">
  <p class="text-center">B5 moisturizing cream</p> </div>
-  <div class="product "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09.jpeg" alt="" class="animate-gentle  object-contain">
+  <div class="product2 "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09.jpeg" alt="" class=" object-contain">
   <p class="text-center">whitening glow</p></div>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
- <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (4).jpeg" alt="" class=" animate-gentle object-contain ">
+ <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (4).jpeg" alt="" 
+  class=" object-contain ">
   Golden glow</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (3).jpeg" alt="" class=" animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (3).jpeg" alt=""
+     class="  object-contain">
    pure carrot</div>
    
-  <div class="relative product">
+  <div class="relative product2">
     
-    <img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (2).jpeg" alt="" class="animate-gentle  object-contain">
+    <img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (2).jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Juli gold</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (1).jpeg" alt="" class="animate-gentle  object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (1).jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Fairness skin gold</div>
 </div>
 <div  class="grid grid-cols-2 lg:grid-cols-4 gap-4  ">
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08 (2).jpeg" alt="" class=" animate-gentle object-contain ">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08 (2).jpeg" alt="" class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Advanced korean skin</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10.jpeg" alt="" class="animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10.jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Duches glow</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08.jpeg" alt="" class=" animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.08.jpeg" alt="" class="  object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>B5 moisturizer</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (1).jpeg" alt="" class="animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (1).jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Milk bubble</div>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (2).jpeg" alt="" class="animate-gentle  object-contain ">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (2).jpeg" alt="" class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1> facial cleanser</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt="" class="animate-gentleobject-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt="" class="object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Whitening soap</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09.jpeg" alt="" class=" animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09.jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Whitening oil</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (2).jpeg" alt="" class=" animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (2).jpeg" alt="" class="  object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Alpha arbuntin</div>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (1).jpeg" alt="" class="animate-gentle object-contain ">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12 (1).jpeg" alt="" class="object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>skin gold</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (1).jpeg" alt="" class="animate-gentle  object-contain ">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (1).jpeg" alt="" class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Baby face facial</div>
   
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (3).jpeg" alt="" class="animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (3).jpeg" alt="" class="object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Oil gel</div>
   
- <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (3).jpeg" alt="" class="animate-gentle object-contain">
+ <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (3).jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Nomarks</div>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-  <div class="product  "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt="" class=" animate-gentle  object-contain">
+  <div class="product2  "><img src="./img/WhatsApp Image 2026-07-08 at 00.19.09 (3).jpeg" alt="" class="   object-contain">
   <p class="text-center">Duches glow</p></div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (1).jpeg" alt="" class=" animate-gentle object-contain ">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (1).jpeg" alt="" class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Baby face facial</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (3).jpeg" alt="" class="animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (3).jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>sugar chrome</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13.jpeg" alt="" class="animate-gentle object-contain">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13.jpeg" alt="" class=" object-contain">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Honey sweet secret</div>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (1).jpeg" alt="" class="object-contain animate-gentle">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.11 (1).jpeg" alt=""
+     class="object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Body wash</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (3).jpeg" alt="" class="  object-contain animate-gentle">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.10 (3).jpeg" alt=""
+     class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Facials</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12.jpeg" alt="" class="  object-contain animate-gentle">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.12.jpeg" alt=""
+     class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>Slime</div>
-  <div class="relative product"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (3).jpeg" alt="" class="  object-contain animate-gentle">
+  <div class="relative product2"><img src="./img/WhatsApp Image 2026-07-08 at 00.19.13 (3).jpeg" alt=""
+     class="  object-contain ">
   <h1 class="absolute top-0 left-0 bg-blue-400 px-3">NEW</h1>ARO-FAC</div>
 </div>
 </div>
@@ -223,7 +420,7 @@ style="background-image: url('./img/Trending\ Beauty\ Hacks\ Every\ Girl\ Should
 
  
 
-<div id="pagination" class="max-w-7xl mx-auto px-6 space-y-4 mb-10 ">
+<div id="pagination2" class="max-w-7xl mx-auto px-6 space-y-4 mb-10 ">
   
 </div>
 
@@ -254,8 +451,12 @@ class="w-full h-75 object-cover animate-gentle">
 <div class="max-w-7xl mx-auto px-6">
   <div class="flex flex-col ">
     <div class="flex-1  p-5">
+
+  
 <h1 class="font-extrabold">Let's connect</h1>
 <p class="font-extralight">Reveal Your Natural Glow✨</p>
+
+
     </div>
     <div class="flex-1  p-5 ">
 <h1 
@@ -284,6 +485,190 @@ class="w-full h-75 object-cover animate-gentle">
   </footer>
   
 
+
+
+
+
+  <script>
+  const productSlider =
+    document.getElementById("productSlider");
+
+const prevBtn =
+    document.getElementById("prevBtn");
+
+const nextBtn =
+    document.getElementById("nextBtn");
+
+const sliderIndicators =
+    document.getElementById("sliderIndicators");
+
+
+const sliderProducts =
+    document.querySelectorAll(".slider-product");
+
+
+let currentPage = 0;
+
+
+// How many products are visible
+function productsPerPage() {
+
+    if (window.innerWidth < 768) {
+
+        return 1;
+
+    }
+
+    return 1;
+
+}
+
+
+// How many pages
+function totalPages() {
+
+    return Math.ceil(
+        sliderProducts.length / productsPerPage()
+    );
+
+}
+
+
+// Move slider
+function updateSlider() {
+
+    const perPage = productsPerPage();
+
+    const percentage =
+        currentPage * 100;
+
+    productSlider.style.transform =
+        `translatex(-${percentage}%)`;
+
+    updateIndicators();
+
+}
+
+
+// NEXT
+nextBtn.addEventListener("click", () => {
+
+    if (currentPage < totalPages() - 1) {
+
+        currentPage++;
+
+        updateSlider();
+
+    }
+
+});
+
+
+// PREVIOUS
+prevBtn.addEventListener("click", () => {
+
+    if (currentPage > 0) {
+
+        currentPage--;
+
+        updateSlider();
+
+    }
+
+});
+
+
+// CREATE THE TWO HANDLES
+function createIndicators() {
+
+    sliderIndicators.innerHTML = "";
+
+    const pages = totalPages();
+
+
+    for (let i = 0; i < pages; i++) {
+
+        const handle =
+            document.createElement("button");
+
+        handle.type = "button";
+
+        handle.className =
+            "w-4 h-4 rounded-full";
+
+
+        handle.addEventListener("click", () => {
+
+            currentPage = i;
+
+            updateSlider();
+
+        });
+
+
+        sliderIndicators.appendChild(handle);
+
+    }
+
+
+    updateIndicators();
+
+}
+
+
+// ACTIVE HANDLE
+function updateIndicators() {
+
+    const handles =
+        sliderIndicators.querySelectorAll("button");
+
+
+    handles.forEach((handle, index) => {
+
+        handle.classList.remove(
+            "bg-pink-300",
+            "bg-gray-300"
+        );
+
+
+        if (index === currentPage) {
+
+            handle.classList.add("bg-pink-300");
+
+        } else {
+
+            handle.classList.add("bg-gray-300");
+
+        }
+
+    });
+
+}
+
+
+// Resize
+window.addEventListener("resize", () => {
+
+    const pages = totalPages();
+
+    if (currentPage >= pages) {
+
+        currentPage = pages - 1;
+
+    }
+
+    createIndicators();
+
+    updateSlider();
+
+});
+
+
+// Start
+createIndicators();
+
+updateSlider();
+</script>
    <script src="./script.js"></script>
  
 </body>

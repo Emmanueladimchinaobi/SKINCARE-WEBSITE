@@ -1,16 +1,13 @@
 const menuBtn = document.getElementById("menuBtn");
-const closeBtn = document.getElementById("closeBtn");
+
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuBtn.addEventListener("click", () => {
- mobileMenu.classList.remove("hidden");
- mobileMenu.classList.add("flex"); 
+ mobileMenu.classList.toggle("hidden"); 
+ menuBtn.classList.toggle("rotate-90")
 });
 
-closeBtn.addEventListener("click", () => {
-  mobileMenu.classList.add("hidden");
-  mobileMenu.classList.remove("flex"); 
-});
+
 
 const servicesBtn = document.getElementById("services-btn");
 const backBtn = document.getElementById("back-btn");
@@ -45,25 +42,25 @@ servicesbtn2.addEventListener ("click", () => {
 
 //*******products */
 
-const products = document.querySelectorAll(".product");
-const pagination = document.getElementById("pagination");
+const products2 = document.querySelectorAll(".product2");
+const pagination2 = document.getElementById("pagination2");
 
 
-const productsPerPage = 4;
+const productsPerPage2 = 4;
 
-let currentPage = 1;
+let currentPage2 = 1;
 
-const totalPages = Math.ceil(products.length / productsPerPage);
+const totalPages2 = Math.ceil(products2.length / productsPerPage2);
 
 
-function showProducts(page) {
+function showProducts2(page) {
  
-    currentPage = page;
+    currentPage2 = page;
 
-    const start = (page - 1) * productsPerPage;
-    const end = start + productsPerPage;
+    const start = (page - 1) * productsPerPage2;
+    const end = start + productsPerPage2;
 
-    products.forEach((product, index) => {
+    products2.forEach((product, index) => {
 
         if (index >= start && index < end) {
 
@@ -77,17 +74,17 @@ function showProducts(page) {
 
     });
 
-    createPagination();
+    createPagination2();
      
 
 }
 
 
-function createPagination() {
+function createPagination2() {
 
-    pagination.innerHTML = "";
+    pagination2.innerHTML = "";
 
-    for (let i = 1; i <= totalPages; i++) {
+    for (let i = 1; i <= totalPages2; i++) {
 
         const button = document.createElement("button");
 
@@ -98,17 +95,19 @@ function createPagination() {
 
         button.addEventListener("click", () => {
 
-            showProducts(i);
+            showProducts2(i);
 
         });
 
-        pagination.appendChild(button);
+        pagination2.appendChild(button);
 
     }
 
 }
 
 
-showProducts(1);
+showProducts2(1);
 
 
+
+    
