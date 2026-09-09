@@ -85,9 +85,3 @@ if (copyButton4) {
         alert("link copied!");
     });
 };
-const faqsbtn = document.getElementById("faqs-btn");
-    const faqsmenu = document.getElementById("faqs-menu");
-    faqsbtn.addEventListener("click", () => {
-        faqsmenu.classList.toggle("hidden");
-        faqsbtn.classList.toggle ("rotate-224")
-    })
