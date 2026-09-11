@@ -28,7 +28,9 @@ contactForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/send-email",
+
+
+          "https://skincare-website-hquu.onrender.com/",
             {
                 method: "POST",
 
