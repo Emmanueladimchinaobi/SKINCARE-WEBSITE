@@ -27,25 +27,22 @@ contactForm.addEventListener("submit", async (e) => {
 
     try {
 
-        const response = await fetch(
+    const response = await fetch(
+    "https://skincare-website-hquu.onrender.com/send-email",
+    {
+        method: "POST",
 
+        headers: {
+            "Content-Type": "application/json"
+        },
 
-          "https://skincare-website-hquu.onrender.com/",
-            {
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                body: JSON.stringify({
-                    name,
-                    email,
-                    message
-                })
-            }
-        );
-
+        body: JSON.stringify({
+            name,
+            email,
+            message
+        })
+    }
+);
 
         const data = await response.json();
 
