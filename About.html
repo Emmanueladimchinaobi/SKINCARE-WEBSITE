@@ -11,7 +11,7 @@
 <body>
    <!-- navbar -->
    
- <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto pt-4 pb-6">
+ <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto pt-4 pb-4">
   <div class="max-w-7xl mx-auto px-6">
     
     <div class="flex items-center justify-between space-x-2">
@@ -23,7 +23,8 @@
 
     <!-- Desktop Menu -->
         <div class="hidden  lg:flex  space-x-8 items-center">
-          <a  href="./skin product.html" class="text-black">Home</a>
+
+            <a  href="./skin product.html" class="text-black">Home</a>
           <div class="relative group ">
 <button id="services-btn2">Services</button>
 <ul id="services-menu2" class="hidden absolute left-0 z-50 bg-white shadow-xl w-50 h-auto">
@@ -47,7 +48,7 @@
             </a>
 
         </div>
-        <div class="flex px-4 ">
+        <div class="flex px-4 z-100">
 <div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
 <span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Benilux</span>
 </div>
@@ -60,6 +61,7 @@
 <div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
 <span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents</span>
 </div>
+
                    </div>
   </div>
 
@@ -68,9 +70,10 @@
   <!-- Full Screen Mobile Menu -->
   <div
     id="mobileMenu"
-    class="fixed inset-0 w-1/2  bg-white z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+    class="fixed inset-0 w-1/2 bg-white z-50 hidden  px-4 py-4 flex-col  space-y-8 text-xl lg:hidden 
+    "
   >
-    
+   
 
 <ul class="list-none"><li class="list-none">
           <a href="./skin product.html" class="block px-6 py-4 mt-20 border-b  border-t list-none">
@@ -85,11 +88,14 @@
 
 <!-- Submenu -->
 <div id="submenu"
-     class="fixed inset-0 flex flex-col justify-center items-center  z-100  bg-white shadow-xl transition-transform duration-300 translate-x-full">
+     class="fixed inset-0 flex flex-col justify-center     bg-white shadow-xl transition-transform duration-300 translate-x-full">
 
-  <button id="back-btn" class="p-4 fixed right-0 top-0">
+ <div class="block px-6 py-4 ">
+<button id="back-btn" class=" ">
     ← Back
   </button>
+ </div>
+  
 
   <ul class=" px-6 py-4 ">
      <li class=" block px-6 py-4 ">
