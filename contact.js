@@ -51,7 +51,7 @@ contactForm.addEventListener("submit", async (e) => {
 
             status.textContent = "Message sent successfully!";
 
-            status.className = "text-center font-medium text-green-600";
+            status.className = "text-center font-medium text-black";
 
             contactForm.reset();
 
