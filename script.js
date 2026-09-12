@@ -108,6 +108,3 @@ function createPagination2() {
 
 showProducts2(1);
 
-
-
-    
