@@ -11,9 +11,24 @@
 <body>
    <!-- navbar -->
    
- <nav class="bg-white shadow-md fixed z-50 w-full top-0 h-auto pt-4 pb-4">
+<nav class="bg-white shadow-md fixed z-100 w-full top-0 h-auto   pb-4">
   <div class="max-w-7xl mx-auto px-6">
-    
+   <!-- navbar -->
+   <div class="   overflow-hidden ">
+    <div class="flex whitespace-nowrap animate-marquee ">
+        <span class="mx-8 py-3 text-xs z-100 ">
+            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
+        </span>
+
+        <span class="mx-8 py-3 text-xs z-100">
+            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
+        </span>
+
+        <span class="mx-8 py-3 text-xs z-100">
+            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
+        </span>
+    </div>
+</div>
     <div class="flex items-center justify-between space-x-2">
        <!-- Hamburger -->
     <button id="menuBtn" class="lg:hidden text-3xl z-100  transition-transform duration-300">
@@ -48,7 +63,21 @@
             </a>
 
         </div>
+
+      <a href="./cart.html" class="relative  z-100 text-xl">
+
+        <i class="fa-regular fa-heart"></i>
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a>
         <div class="flex px-4 z-100">
+       
 <div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
 <span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Benilux</span>
 </div>
@@ -59,7 +88,10 @@
 <span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">and</span>
 </div>
 <div class="relative bg-gray-100 h-15 w-15 rounded-full text-black">
-<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents</span>
+<span class="absolute inset-0 flex justify-center items-center" style="font-family: 'Times New Roman', Times, serif;">Scents
+</span>
+
+
 </div>
 
                    </div>
@@ -70,13 +102,13 @@
   <!-- Full Screen Mobile Menu -->
   <div
     id="mobileMenu"
-    class="fixed inset-0 w-1/2 bg-white z-50 hidden  px-4 py-4 flex-col  space-y-8 text-xl lg:hidden 
+    class="fixed inset-0 w-1/2 bg-white z-50 hidden  px-4 py-4 flex-col  space-y-8 text-xl lg:hidden  
     "
   >
    
 
 <ul class="list-none"><li class="list-none">
-          <a href="./skin product.html" class="block px-6 py-4 mt-20 border-b  border-t list-none">
+          <a href="./skin product.html" class="block px-6 py-4 mt-40 border-b   list-none">
             Home
           </a>
           <div id="main-menu"
@@ -185,10 +217,31 @@ class="w-full h-75 object-cover"><h1 class="absolute bottom-0 left-0 text-white 
   <!------footer-->
   <footer class="bg-black w-full text-white h-auto pb-4 ">
 <div class="max-w-7xl mx-auto px-6">
+    <div class="   overflow-hidden ">
+    <div class="flex whitespace-nowrap animate-marquee ">
+        <span class="mx-8 py-3 text-xs  ">
+            📲 Add us up on all socials so you can easily <br> share  your wishlist with us and we can attend to you.
+        </span>
+
+        <span class="mx-8 py-3 text-xs">
+            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
+        </span>
+
+        <span class="mx-8 py-3 text-xs ">
+            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
+        </span>
+    </div>
+</div>
   <div class="flex flex-col ">
     <div class="flex-1  p-5">
+
+  
 <h1 class="font-extrabold">Let's connect</h1>
 <p class="font-extralight">Reveal Your Natural Glow✨</p>
+
+
+
+
     </div>
     <div class="flex-1  p-5 ">
 <h1 
@@ -215,6 +268,12 @@ class="w-full h-75 object-cover"><h1 class="absolute bottom-0 left-0 text-white 
 </div>
 </div>
   </footer>
+  
     <script src="./script.js"></script>
+    <script src="./cartcount.js"></script>
+   <script src="./cart.js"></script>
+   <script src="./product.js"></script>
+ 
+    
 </body>
 </html>

@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Document</title>
 </head>
-<body>
-   <!-- navbar -->
-   
+<body >
+ 
  <nav class="bg-white shadow-md fixed z-100 w-full top-0 h-auto   pb-4">
   <div class="max-w-7xl mx-auto px-6">
    <!-- navbar -->
@@ -157,131 +156,67 @@
     
   </div>
 </nav>
-  <div class="max-w-7xl mx-auto px-6 pt-24 pb-10">
-   
+
+
+
+
     
-    <h1 class="p-5  font-extrabold">
+
+    <!-- Shopping Cart -->
+    <section class="max-w-7xl mx-auto px-6 py-10  pt-30 pb-30">
       
-        
-     About Our Skincare Products</h1>
-<p class="p-5" style="font-family: 'Times New Roman', Times, serif;">
-At Benilux Skin and Scents, we believe that healthy, glowing skin begins with quality skincare. 
-Our products are carefully selected to nourish, protect, and enhance your skin using trusted ingredients that suit a variety of skin types.
 
-
-From cleansers and moisturizers to serums and treatments, we are committed to providing skincare solutions that help you achieve a radiant, 
-confident complexion. Every product is chosen with effectiveness, safety, and customer satisfaction in mind.
-
-Whether you're starting a new skincare routine or looking to improve your current one, we're here to help you find products that meet your 
-unique skincare needs. Your skin deserves the best, and we're dedicated to helping you look and feel your best every day.
-
-Discover the confidence that comes with healthy, beautiful skin.
-Your skin deserves the very best. At Benilux Skin and Scents, we offer premium skincare products designed to nourish, hydrate, and
- enhance your natural beauty. Whether you're looking to brighten your complexion, reduce blemishes, or maintain healthy, radiant skin,
-  we have products that support your skincare goals.
-
-Our carefully selected skincare range is made to help you feel confident in your skin every day. From gentle cleansers and moisturizers 
-to powerful serums and treatments, every product is chosen with quality and effectiveness in mind.
-
-Experience the difference that consistent skincare can make. Give your skin the care it deserves and enjoy a healthier, smoother, and
- more radiant complexion.
-
-Shop with us today and take the first step toward glowing, beautiful skin.
-
-    </p>
-
-    <div class="border   w-full  rounded-t-2xl p-4  flex justify-between relative pb-10">
-<p>FAQs</p>
-<button id="faqs-btn"  class="text-2xl -mt-2 transition-transform duration-300">
-  +
-</button>
-
-</div>
-<div id="faqs-menu" class="hidden  border  w-full  rounded-b-2xl  p-4">
-  <h1 class="text-xs font-extrabold">Do you deliver within all the states in Nigeria?</h1>
-<button class="mt-4 border  rounded-2xl p-2 animate-gentle">
-  yes i do
-</button>
-<h1 class="text-xs  font-extrabold mt-2">How long does delivery take?</h1>
-<button class="mt-4 border  rounded-2xl p-2 animate-gentle">
-  our delivery is usually on wednesdays and saturdays after payment is confirmed
-</button>
-
-<h1 class="text-xs  font-extrabold mt-2">is delivery fee included in agreed price ?</h1>
-<button class="mt-4 border  rounded-2xl p-2 animate-gentle">
-  Delivery fee will be paid by the customer on the delivery of his or her package.
-</button>
-</div>
-  </div>
-  
-  <!------footer-->
-  <footer class="bg-black w-full text-white h-auto pb-4 ">
-<div class="max-w-7xl mx-auto px-6">
-    <div class="   overflow-hidden ">
-    <div class="flex whitespace-nowrap animate-marquee ">
-        <span class="mx-8 py-3 text-xs  ">
-            📲 Add us up on all socials so you can easily <br> share  your wishlist with us and we can attend to you.
-        </span>
-
-        <span class="mx-8 py-3 text-xs">
-            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
-        </span>
-
-        <span class="mx-8 py-3 text-xs ">
-            📲 Add us up on all socials so you can easily <br> share your wishlist with us and we can attend to you.
-        </span>
-    </div>
-</div>
-  <div class="flex flex-col ">
-    <div class="flex-1  p-5">
-
-  
-<h1 class="font-extrabold">Let's connect</h1>
-<p class="font-extralight">Reveal Your Natural Glow✨</p>
-
-
-
-
-    </div>
-    <div class="flex-1  p-5 ">
-<h1 
- style="font-family: 'Times New Roman', Times, serif;">SOCIAL MEDIA</h1>
-<ul class="mt-5 flex space-x-4 pb-4">
-  <li class="relative "><a href="https://www.tiktok.com/@beniluxskinandscents"><i class="fa-brands fa-tiktok text-3xl"></i></a> </li>
+        <button
+    id="shareButton"
+    class=" "
+>
+    <i class="fa-solid fa-share-from-square"></i>share wishlist
      
-   <li class="relative "><a href="https://www.facebook.com/share/18zhkPdQz7/?mibextid=wwXIfr">
-    <i class="fa-brands fa-facebook text-blue-600 text-3xl"></i></a></li>
- <li class="relative "><a href="https://wa.me/2347049540146?text=Hello,Benilux Skin and Scents I'm interested in your products.">
-  <i class="fa-brands fa-whatsapp text-green-600 text-3xl"></i></a></li>
-<li class="relative "><a href="tel:+2347049540146"><i class="fa-solid fa-phone text-green-400 text-3xl"></i></a> </li>
-  
-</ul>
-    </div>
+</button>
 
-  </div>
-  <div class="border-t">
-  <ul class="flex flex-col justify-center items-center space-y-2 p-4">
-    <li class="text-white"><i class="fa-regular fa-copyright"></i> copyright 2026  </li>
+        <!-- Cart Items -->
+        <div id="cart-items" class="space-y-6 ">
 
-  <li class="text-white">All Rights Reserved </li>
-</ul>
-</div>
-</div>
-  </footer>
-  
-<script>
-  const faqsbtn = document.getElementById("faqs-btn");
-    const faqsmenu = document.getElementById("faqs-menu");
-    faqsbtn.addEventListener("click", () => {
-        faqsmenu.classList.toggle("hidden");
-        faqsbtn.classList.toggle ("rotate-224")
-    })
+            <!-- Items will be added here by cart.js -->
 
-</script>
- <script src="./script.js"></script>  
- <script src="./cartcount.js"></script>
-   <script src="./cart.js"></script>
-   <script src="./product.js"></script>
-  
+        </div>
+
+
+        
+
+    </section>
+
+
+
+    
+
+  <script>
+    const shareButton = document.getElementById("shareButton");
+
+shareButton.addEventListener("click", async () => {
+    const shareData = {
+        title: document.title,
+        text: "Check out this website!",
+        url: window.location.href
+    };
+
+    try {
+        if (navigator.share) {
+            await navigator.share(shareData);
+        } else {
+            await navigator.clipboard.writeText(window.location.href);
+
+            alert("Link copied! You can now share it on WhatsApp, Facebook, etc.");
+        }
+    } catch (error) {
+        console.log("Sharing cancelled.");
+    }
+});
+  </script>
+    <script src="./cart.js"></script>
+    <script src="./cartcount.js"></script>
+    <script src="./script.js"></script>
+    
+    
 </body>
 </html>
