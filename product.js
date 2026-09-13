@@ -37,6 +37,7 @@ buttons.forEach(button => {
 
         // Update badge
         updateCartCount();
+        alert("Product added to your wishlist!");
 
     });
 
