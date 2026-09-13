@@ -865,6 +865,11 @@
       object-fit: contain;
     }
   }
+  .md\:uppercase {
+    @media (width >= 48rem) {
+      text-transform: uppercase;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
