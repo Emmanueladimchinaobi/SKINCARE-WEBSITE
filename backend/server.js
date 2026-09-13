@@ -34,7 +34,7 @@ async function connectMongoDB() {
 
         await mongoClient.connect();
 
-        db = mongoClient.db("Pam luxe");
+        db = mongoClient.db("Benilux");
 
         wishlistsCollection = db.collection("wishlists");
 
