@@ -190,29 +190,127 @@
 
     
 
-  <script>
-    const shareButton = document.getElementById("shareButton");
+ <script>
+
+const shareButton = document.getElementById("shareButton");
 
 shareButton.addEventListener("click", async () => {
-    const shareData = {
-        title: document.title,
-        text: "I am interested in purhasing this!",
-        url: window.location.href
-    };
+
+    // Get current wishlist
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+    // Check if wishlist is empty
+    if (cart.length === 0) {
+
+        alert("Your wishlist is empty.");
+
+        return;
+
+    }
+
+
+    // Change button text
+    shareButton.innerHTML = `
+        <i class="fa-solid fa-spinner fa-spin"></i>
+        Creating link...
+    `;
+
+    shareButton.disabled = true;
+
 
     try {
-        if (navigator.share) {
-            await navigator.share(shareData);
-        } else {
-            await navigator.clipboard.writeText(window.location.href);
 
-            alert("Link copied! You can now share it on WhatsApp, Facebook, etc.");
+        // Send wishlist to backend
+        const response = await fetch(
+            "https://skincare-website-hquu.onrender.com/wishlists",
+            {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    items: cart
+                })
+
+            }
+        );
+
+
+        const data = await response.json();
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                data.message || "Unable to create wishlist."
+            );
+
         }
+
+
+        // Create shareable frontend URL
+        const wishlistLink =
+            `${window.location.origin}${window.location.pathname}?wishlist=${data.wishlistId}`;
+
+
+        const shareData = {
+
+            title: "My Wishlist",
+
+            text: "I am interested in purchasing these products!",
+
+            url: wishlistLink
+
+        };
+
+
+        // Mobile share menu
+        if (navigator.share) {
+
+            await navigator.share(shareData);
+
+        } else {
+
+            // Desktop fallback
+            await navigator.clipboard.writeText(wishlistLink);
+
+            alert(
+                "Wishlist link copied! You can now share it on WhatsApp, Facebook, or another platform."
+            );
+
+        }
+
+
     } catch (error) {
-        console.log("Sharing cancelled.");
+
+        console.error("SHARE ERROR:", error);
+
+        if (error.name !== "AbortError") {
+
+            alert(
+                "Unable to create wishlist link. Please try again."
+            );
+
+        }
+
     }
+
+
+    // Restore button
+    shareButton.innerHTML = `
+        <i class="fa-solid fa-share-from-square"></i>
+        Share wishlist
+    `;
+
+    shareButton.disabled = false;
+
 });
-  </script>
+
+</script>
     <script src="./cart.js"></script>
     <script src="./cartcount.js"></script>
     <script src="./script.js"></script>

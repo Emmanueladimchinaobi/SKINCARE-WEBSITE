@@ -3,6 +3,20 @@ const total = document.getElementById("total");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+
+// =====================================
+// CHECK IF THIS IS A SHARED WISHLIST
+// =====================================
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const sharedWishlistId = urlParams.get("wishlist");
+
+
+// =====================================
+// DISPLAY CART
+// =====================================
+
 function displayCart() {
 
     cartItems.innerHTML = "";
@@ -16,25 +30,24 @@ function displayCart() {
             </p>
         `;
 
-       
-
         return;
     }
+
 
     cart.forEach((item, index) => {
 
         cartItems.innerHTML += `
 
-        <div class="bg-white text-black rounded-xl shadow-lg p-5  flex flex-col items-center md:flex-row gap-8 ">
+        <div class="bg-white text-black rounded-xl shadow-lg p-5 flex flex-col items-center md:flex-row gap-8">
 
             <img
                 src="${item.image}"
                 class="w-75 h-75 object-contain rounded-lg animate-gentle"
             >
 
-            <div class="flex-1 ">
+            <div class="flex-1">
 
-                <h2 class="text-sm font-bold ">
+                <h2 class="text-sm font-bold">
                     ${item.name}
                 </h2>
 
@@ -61,6 +74,7 @@ function displayCart() {
 
             </div>
 
+
             <div class="text-right">
 
                 <button
@@ -82,6 +96,11 @@ function displayCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+
+// =====================================
+// INCREASE
+// =====================================
+
 function increase(index) {
 
     cart[index].quantity++;
@@ -91,6 +110,11 @@ function increase(index) {
     displayCart();
 
 }
+
+
+// =====================================
+// DECREASE
+// =====================================
 
 function decrease(index) {
 
@@ -110,6 +134,11 @@ function decrease(index) {
 
 }
 
+
+// =====================================
+// REMOVE
+// =====================================
+
 function removeItem(index) {
 
     cart.splice(index, 1);
@@ -120,4 +149,68 @@ function removeItem(index) {
 
 }
 
-displayCart();
+
+// =====================================
+// LOAD SHARED WISHLIST
+// =====================================
+
+async function loadSharedWishlist() {
+
+    try {
+
+        const response = await fetch(
+            `https://skincare-website-hquu.onrender.com/wishlists/${sharedWishlistId}`
+        );
+
+
+        const data = await response.json();
+
+
+        if (!response.ok) {
+
+            cartItems.innerHTML = `
+                <p class="text-center text-red-500 text-xl">
+                    ${data.message || "Wishlist not found."}
+                </p>
+            `;
+
+            return;
+
+        }
+
+
+        // Use the shared wishlist
+        cart = data.items;
+
+
+        displayCart();
+
+
+    } catch (error) {
+
+        console.error("Error loading wishlist:", error);
+
+        cartItems.innerHTML = `
+            <p class="text-center text-red-500 text-xl">
+                Unable to load wishlist.
+            </p>
+        `;
+
+    }
+
+}
+
+
+// =====================================
+// START
+// =====================================
+
+if (sharedWishlistId) {
+
+    loadSharedWishlist();
+
+} else {
+
+    displayCart();
+
+}
