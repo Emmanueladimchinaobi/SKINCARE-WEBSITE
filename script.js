@@ -35,8 +35,10 @@ backBtn.addEventListener("click", () => {
 
 const servicesbtn2 = document.getElementById ("services-btn2");
 const servicesmenu2 = document.getElementById ("services-menu2");
+const arrow = document.getElementById ("arrow")
 servicesbtn2.addEventListener ("click", () => {
     servicesmenu2.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180")
 });
 
 
